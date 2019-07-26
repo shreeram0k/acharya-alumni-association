@@ -1,0 +1,107 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+    min-height: 80px;
+}
+.navbar-brand {
+    padding: 0 15px;
+    height: 80px;
+    line-height: 80px;
+}
+.navbar-toggler-icon {
+    background-image: url(../img/menu.svg) !important;
+}
+h1 {
+    color: #333333;
+    letter-spacing: 0.56px;
+    /* font-size: 56px; */
+    line-height: 63px;
+}
+p {
+    font-size: 22px;
+    letter-spacing: 0.28px;
+    color: #333333;
+    opacity: .5;
+}
+
+.main-col-1 {
+    padding: 10px 25px;
+}
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+    p {
+        letter-spacing: .01em;
+        -webkit-font-smoothing: antialiased;
+        font-feature-settings: 'calt' 0;
+        line-height: 38px;
+    }
+    .input-landing {
+        width: 55%;
+    }
+    .btn-landing {
+        margin-left: auto;
+    }
+    .svg-col {
+        display: none;
+    }
+}
+
+.navbar-light .navbar-toggler {
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: 0;
+}
+
+a:hover {
+    color: #0019e6b3;
+    text-decoration: none;
+}
+.blob-right {
+    width: 150px;
+    height: 200px;
+    right: 0;
+    top: 55px;
+    position: absolute;
+    background-image: linear-gradient(orange, red);
+    border-radius: 0 0 60px 240px;
+    z-index: -3;
+    opacity: .4;
+}
+.blob-left {
+    width: 200px;
+    height: 390px;
+    left: -94px;
+    top: 150px;
+    position: absolute;
+    border-top-right-radius: 275px 309px;
+    border-bottom-right-radius: 328px 627px;
+    border-bottom-left-radius: 108px 345px;
+    background-image: linear-gradient(orange, red);
+    z-index: -3;
+    opacity: .4;
+}
+@media only screen and (max-width: 600px) {
+    .blob-right {
+        top: 6px;
+        border-radius: 0 0 60px 100em;
+    }
+    .blob-left {
+        width: 183px;
+        height: 273px;
+        left: -106px;
+        top: 330px;
+    }
+}
+
+.form-control:focus {
+    border-color: #808080 !important;
+    box-shadow: none;
+}
+
+.footer-img {
+    width: 60%;
+    margin-top: 50px;
+}
