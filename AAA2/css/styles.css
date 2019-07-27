@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+header,
+#landingHeader {
+    height: 100%;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    min-height: 80px;
+}
+
+.navbar-brand {
+    padding: 0 15px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("../img/menu1.svg") !important;
+}
+
+h1 {
+    color: #333333;
+    letter-spacing: 0.56px;
+    /* font-size: 56px; */
+    line-height: 63px;
+}
+
+p {
+    font-size: 22px;
+    letter-spacing: 0.28px;
+    color: #333333;
+    opacity: .5;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        letter-spacing: .01em;
+        -webkit-font-smoothing: antialiased;
+        font-feature-settings: 'calt'0;
+        line-height: 38px;
+    }
+
+    .input-landing {
+        width: 55%;
+    }
+
+    .btn-landing {
+        margin-left: auto;
+    }
+}
+
+.navbar-light .navbar-toggler {
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: 0;
+}
+
+a:hover {
+    color: #0019e6b3;
+    text-decoration: none;
+}
+
+#landingHeader {
+    background: url("../img/b2.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* opacity: .5; */
+}
+
+#landingHeader:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* background: #e0e0e05c; */
+    background: rgba(53, 53, 53, 0.48);
+    /* background-image: linear-gradient(120deg, #f6d365d1 0%, #fda08573 100%); */
+    /* background: radial-gradient(circle, rgba(238, 238, 238, 0.25) 0%, rgba(175, 175, 175, 0.68) 98%); */
+    /* background-image: linear-gradient(-225deg, #FFE29F 0%, #ffa99f69 48%, #7a71ffbf 100%); */
+    background-image: linear-gradient(-225deg, #ffe29f8f 0%, #ffa99f69 48%, #7a71ff9e 100%);
+}
+
+
+#mask {
+    color: #fff;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+nav a {
+    opacity: 1 !important;
+    color: #fff !important;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    opacity: 1 !important;
+}
+
+.opacity {
+    background-color: #f8f9fa00 !important;
+    transition: .5s;
+}
+
+.opacityTrans {
+    transition: .2s;
+}
+
+.textshadow {
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+        0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.navlink {
+    color: #000 !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .caption {
+        top: 30%;
+    }
+
+    .caption h1 {
+        font-size: 2em;
+    }
+
+    .caption h2 {
+        font-size: 1.2em;
+    }
+
+    .reconnect-btn-form {
+        padding: 0px 10px;
+    }
+
+    .input-landing {
+        width: 100%;
+    }
+
+    .btn-landing {
+        margin-left: inherit;
+    }
+}
+
+/* .ham-close {
+    background-image: url(img/hamClose.svg) !important;
+    font-size: 14px;
+    padding-right: 24px;
+} */
+
+
+/* ----------------------------blob designs------------------------------------- */
+.blob-left-al {
+    width: 153px;
+    height: 200px;
+    left: 23px;
+    /* top: -383px; */
+    bottom: -145px;
+    position: absolute;
+    /* background-image: linear-gradient(orange, #0019e6b3); */
+    border-radius: 0 0 60px 240px;
+    z-index: -22;
+    opacity: .4;
+    transform: rotate(270deg);
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
+}
+
+.blob-right-al {
+    width: 262px;
+    height: 200px;
+    right: 0;
+    /* top: 55px; */
+    bottom: -195px;
+    position: absolute;
+    background-image: linear-gradient(orange, red);
+    border-radius: 0 0 60px 240px;
+    z-index: -3;
+    opacity: .4;
+}
+
+@media only screen and (max-width: 600px) {
+    .blob-left-al {
+        display: none;
+    }
+}
+
+/* --------------------notable alumni boxes------------------------------ */
+.alumni {
+    margin: 75px 0px;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 15px;
+}
+
+.alumni-box {
+    padding: 0 35px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: .4s;
+}
+
+.alumni-box:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+}
+
+.alumni-box img {
+    width: 60px;
+    margin-top: 65px;
+    margin-bottom: 45px;
+}
+
+.alumni-box h6 {
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.alumni-box p {
+    font-size: 14px;
+    color: #808080;
+}
+
+.fa-arrow-right {
+    font-size: 22px !important;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+
+/* **********************************COUNTER starts************************************* */
+.counter {
+    text-align: center;
+}
+
+
+.counter-count {
+    font-size: 2em;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    border-radius: 50%;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    line-height: 92px;
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+}
+
+.alum-connected,
+.student-connected,
+.avai-jobs,
+.avai-internships {
+    font-size: 1.3em;
+    color: #000000;
+    line-height: 34px;
+}
